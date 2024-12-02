@@ -8,7 +8,6 @@ const App = () => {
   return (
     <div>
       <Home />
-      
       <Result />
       <BuyCredit />
     </div>
