@@ -8,6 +8,15 @@ const Navbar = () => {
             <Link to='/'>
                 <img src={assets.logo} alt="logo image" className='w-28 sm:w-32 lg:w-40' />
             </Link>
+
+            <div>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
         </div>
     )
 }
