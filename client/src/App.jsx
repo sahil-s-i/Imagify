@@ -7,9 +7,11 @@ import BuyCredit from './pages/BuyCredit'
 const App = () => {
   return (
     <div>
-      <Home />
-      <Result />
-      <BuyCredit />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/result' element={<Result />} />
+        <Route path='/buy' element={<BuyCredit />} />
+      </Routes>
     </div>
   )
 }
