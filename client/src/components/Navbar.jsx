@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const [user, Setuser] = useState(null);
+
     return (
         <div>
             <Link to='/'>
@@ -10,9 +13,13 @@ const Navbar = () => {
             </Link>
 
             <div>
-                <div>
-                    
-                </div>
+                {
+                    user ?
+                        <div></div>
+                        :
+                        <div></div>
+                }
+
                 <div>
 
                 </div>
