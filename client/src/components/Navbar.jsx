@@ -17,7 +17,10 @@ const Navbar = () => {
                     user ?
                         <div></div>
                         :
-                        <div></div>
+                        <div>
+                            <p>Pricing</p>
+                            <button>Login</button>
+                        </div>
                 }
 
                 <div>
