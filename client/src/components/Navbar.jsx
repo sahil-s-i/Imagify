@@ -18,8 +18,8 @@ const Navbar = () => {
                         <div></div>
                         :
                         <div className='flex gap-2 items-center sm:gap-5'>
-                            <p>Pricing</p>
-                            <button>Login</button>
+                            <p className='cursor-pointer'>Pricing</p>
+                            <button className='bg-jink-800 text-white py-2 px-2 text-sm rounded-full'>Login</button>
                         </div>
                 }
 
