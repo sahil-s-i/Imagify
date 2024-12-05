@@ -24,10 +24,10 @@ const Navbar = () => {
                             </button>
                             <p>Hi, John</p>
                             <div className='relative group'>
-                                <img src={assets.user} className='w-10 drop-shadow' alt="Added user image" />
+                                <img src={assets.profile_icon} className='w-10 drop-shadow' alt="Profile image" />
                                 <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12'>
                                     <ul>
-                                        <li></li>
+                                        <li>Logout</li>
                                     </ul>
 
                                 </div>
