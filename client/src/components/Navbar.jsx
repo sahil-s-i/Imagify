@@ -23,8 +23,11 @@ const Navbar = () => {
                                 <p>Credit left : 50</p>
                             </button>
                             <p>Hi, John</p>
-                            <div>
+                            <div className='relative group'>
                                 <img src={assets.user} className='w-10 drop-shadow' alt="Added user image" />
+                                <div className='absolute hidden group-hover:block'>
+
+                                </div>
                             </div>
                         </div>
                         :
