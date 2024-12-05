@@ -22,6 +22,10 @@ const Navbar = () => {
                                 <img className='w-5' src={assets.credit_star} alt="Credit star image" />
                                 <p>Credit left : 50</p>
                             </button>
+                            <p>Hi, John</p>
+                            <div>
+                                <img src={assets.user} className='w-10 drop-shadow' alt="Added user image" />
+                            </div>
                         </div>
                         :
                         <div className='flex gap-2 items-center sm:gap-5'>
