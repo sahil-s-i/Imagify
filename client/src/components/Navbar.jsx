@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
-    const [user, Setuser] = useState(null);
+    const [user, Setuser] = useState(true);
 
     const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ const Navbar = () => {
                         <div></div>
                         :
                         <div className='flex gap-2 items-center sm:gap-5'>
-                            <p className='cursor-pointer'>Pricing</p>
+                            <p onClick={()=>navigate('/buy')} className='cursor-pointer'>Pricing</p>
                             <button className='bg-zinc-800 text-white py-2 px-7 text-sm rounded-full sm:px-10'>Login</button>
                         </div>
                 }
