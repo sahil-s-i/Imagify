@@ -25,7 +25,10 @@ const Navbar = () => {
                             <p>Hi, John</p>
                             <div className='relative group'>
                                 <img src={assets.user} className='w-10 drop-shadow' alt="Added user image" />
-                                <div className='absolute hidden group-hover:block'>
+                                <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12'>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
 
                                 </div>
                             </div>
