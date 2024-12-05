@@ -19,7 +19,8 @@ const Navbar = () => {
                     user ?
                         <div>
                             <button>
-                                <img src={assets.credit_star} alt="Credit star image" />
+                                <img className='w-5' src={assets.credit_star} alt="Credit star image" />
+                                <p>Credit left : 50</p>
                             </button>
                         </div>
                         :
