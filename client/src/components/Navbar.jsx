@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
     const [user, Setuser] = useState(null);
+
+    const navigate = useNavigate();
 
     return (
         <div className='flex justify-between items-center py-4'>
