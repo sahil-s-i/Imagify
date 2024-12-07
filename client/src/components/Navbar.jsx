@@ -17,7 +17,7 @@ const Navbar = () => {
             <div>
                 {
                     user ?
-                        <div className='flex text-center gap-2 sm:gap-3'>
+                        <div className='flex items-center gap-2 sm:gap-5'>
                             <button className='flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700 '>
                                 <img className='w-5' src={assets.credit_star} alt="Credit star image" />
                                 <p>Credit left : 50</p>
