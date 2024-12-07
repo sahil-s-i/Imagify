@@ -22,11 +22,11 @@ const Navbar = () => {
                                 <img className='w-5' src={assets.credit_star} alt="Credit star image" />
                                 <p className='text-xs sm:text-sm font-medium text-gray-600'>Credit left : 50</p>
                             </button>
-                            <p>Hi, John</p>
+                            <p className='text-gray-600 max-sm:hidden pl-4'>Hi, John</p>
                             <div className='relative group'>
                                 <img src={assets.profile_icon} className='w-10 drop-shadow' alt="Profile image" />
                                 <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12'>
-                                    <ul>
+                                    <ul className='list-none m-0 p-2 bg-white rounded-md border text-sm'>
                                         <li>Logout</li>
                                     </ul>
 
