@@ -14,7 +14,7 @@ const Header = () => {
 
       <button>
         Generate Images
-        <img src= alt="" />
+        <img src={assets.star_group} alt="shinging starts" />
       </button>
 
     </div>
