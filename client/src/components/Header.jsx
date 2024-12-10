@@ -19,7 +19,7 @@ const Header = () => {
 
       <div>
         {Array(6).fill('').map((item, index) => {
-          <img src={assets.sample_img_1} alt="sample generated image" />
+          <img src={assets.sample_img_1} alt="sample generated image" key={index } />
         })}
       </div>
 
