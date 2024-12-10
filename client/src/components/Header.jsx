@@ -17,6 +17,12 @@ const Header = () => {
         <img className='h-6' src={assets.star_group} alt="shinging starts" />
       </button>
 
+      <div>
+        {Array(6).fill('').map((item, index) => {
+          <img src={assets.sample_img_1} alt="sample generated image" />
+        })}
+      </div>
+
     </div>
   )
 }
