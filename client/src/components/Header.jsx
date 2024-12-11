@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className='flex flex-wrap justify-center mt-16 gap-3'>
         {Array(6).fill('').map((item, index) => (
-          <img className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10' src={assets.sample_img_1} alt="sample generated image" key={index} width={70} />
+          <img className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10' src={index % 2 === 0 ? assets.sample_img_2 : assets.sample_img_1} alt="sample generated image" key={index} width={70} />
         ))}
       </div>
 
