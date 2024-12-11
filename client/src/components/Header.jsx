@@ -17,7 +17,7 @@ const Header = () => {
         <img className='h-6' src={assets.star_group} alt="shinging starts" />
       </button>
 
-      <div>
+      <div className='flex flex-wrap justify-center mt-16 gap-3'>
         {Array(6).fill('').map((item, index) => (
           <img className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10' src={assets.sample_img_1} alt="sample generated image" key={index} width={70} />
         ))}
