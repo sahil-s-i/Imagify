@@ -13,6 +13,7 @@ const Steps = () => {
             <img src={item.icon} alt="Icon image" />
             <div>
               <h2>{item.title}</h2>
+              <p>{item.description}</p>
             </div>
           </div>
         ))}
