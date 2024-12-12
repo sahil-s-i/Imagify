@@ -11,6 +11,9 @@ const Steps = () => {
         {stepsData.map((item, index) => (
           <div>
             <img src={item.icon} alt="Icon image" />
+            <div>
+              <h2>{item.title}</h2>
+            </div>
           </div>
         ))}
       </div>
