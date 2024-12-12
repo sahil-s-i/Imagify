@@ -9,7 +9,7 @@ const Steps = () => {
 
       <div>
         {stepsData.map((item, index) => (
-          <div>
+          <div key={index}>
             <img src={item.icon} alt="Icon image" />
             <div>
               <h2>{item.title}</h2>
