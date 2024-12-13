@@ -10,6 +10,10 @@ const Description = () => {
 
             <div>
                 <img src={assets.sample_img_1} alt="" className='w-80 xl:w-96 rounded-lg'/>
+                <div>
+                    <h2>Introducing the AI-Powered Text to Image Generator</h2>
+                    <p></p>
+                </div>
             </div>
         </div>
     )
