@@ -8,7 +8,9 @@ const Testimonials = () => {
             <p className='text-gray-500 mb-12'>What Our Users Are Saying</p>
 
             <div className='flex flex-col gap-6'>
-                
+                {testimonialsData.map((testimonial, index) => (
+                    
+                ))}
             </div>
         </div>
     )
