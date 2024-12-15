@@ -9,7 +9,7 @@ const Testimonials = () => {
 
             <div className='flex flex-col gap-6'>
                 {testimonialsData.map((testimonial, index) => (
-                    
+                    <div></div>
                 ))}
             </div>
         </div>
