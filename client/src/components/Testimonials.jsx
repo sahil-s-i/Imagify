@@ -7,7 +7,7 @@ const Testimonials = () => {
             <h1 className='text-3xl sm:text-4xl font-semibold mb-2'>Customer testimonials</h1>
             <p className='text-gray-500 mb-12'>What Our Users Are Saying</p>
 
-            <div>
+            <div className='flex flex-col gap-6'>
                 
             </div>
         </div>
