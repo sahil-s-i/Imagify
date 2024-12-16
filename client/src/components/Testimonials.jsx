@@ -13,6 +13,11 @@ const Testimonials = () => {
                     <div key={index}>
                         <div>
                             <img src={testimonial.image} className='rounded-full w-14' alt="testimonials image" />
+                            <h2>{testimonial.name}</h2>
+                            <p>{testimonial.role}</p>
+                            <div>
+                                
+                            </div>
                         </div>
                     </div>
                 ))}
