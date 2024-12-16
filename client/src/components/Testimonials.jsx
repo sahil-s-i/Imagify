@@ -20,6 +20,7 @@ const Testimonials = () => {
                                     <img key={index} src={assets.rating_star} alt="rating stars" className='' />
                                 ))}
                             </div>
+                            <p>{testimonial.text}</p>
                         </div>
                     </div>
                 ))}
