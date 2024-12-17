@@ -9,6 +9,8 @@ const Footer = () => {
 
         <div>
             <img src={assets.facebook_icon} alt="facebook icon" width={35}/>
+            <img src={assets.instagram_icon} alt="instagram icon" width={35}/>
+            <img src={assets.twitter_icon} alt="twitter icon" width={35}/>
         </div>
     </div>
   )
