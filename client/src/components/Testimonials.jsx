@@ -11,7 +11,7 @@ const Testimonials = () => {
             <div className='flex flex-wrap gap-6'>
                 {testimonialsData.map((testimonial, index) => (
                     <div key={index} className='bg-white/20 p-12 rounded-lg shadow-md order w-80 m-auto cursor-pointer hover:scale-[1.02] transition-all'>
-                        <div>
+                        <div className='flex flex-col items-center'>
                             <img src={testimonial.image} className='rounded-full w-14' alt="testimonials image" />
                             <h2>{testimonial.name}</h2>
                             <p>{testimonial.role}</p>
