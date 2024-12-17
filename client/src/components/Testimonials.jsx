@@ -13,7 +13,7 @@ const Testimonials = () => {
                     <div key={index} className='bg-white/20 p-12 rounded-lg shadow-md order w-80 m-auto cursor-pointer hover:scale-[1.02] transition-all'>
                         <div className='flex flex-col items-center'>
                             <img src={testimonial.image} className='rounded-full w-14' alt="testimonials image" />
-                            <h2>{testimonial.name}</h2>
+                            <h2 className='text-xl font-semibold mt-3 '>{testimonial.name}</h2>
                             <p>{testimonial.role}</p>
                             <div className='flex mb-4'>
                                 {Array(testimonial.stars).fill().map((item, index) => (
