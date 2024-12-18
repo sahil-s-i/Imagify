@@ -1,9 +1,12 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const Result = () => {
   return (
     <div>
-      Result page
+      <div className='relative'>
+          <img src={assets.sample_img_1} alt="" />
+      </div>
     </div>
   )
 }
