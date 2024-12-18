@@ -13,7 +13,7 @@ const Result = () => {
       </div>
       <div>
         <input type="text" placeholder='Describe what you want to generate' className='flex-1 bg-transparent outline-none ml-8 max-sm:w-20'/>
-        <button type='submit'>Generate</button>
+        <button className='bg-zinc-900 px-10 sm:px-16 py-3 rounded-full' type='submit'>Generate</button>
       </div>
     </form>
   )
