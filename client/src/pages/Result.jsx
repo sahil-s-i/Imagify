@@ -18,7 +18,7 @@ const Result = () => {
 
       <div className='flex gap-2 flex-wrap justify-center text-white text-sm p-0.5 mt-10 rounded-full'>
         <p className='bg-transparent border border-zinc-900 text-black px-8 py-3 rounded-full cursor-pointer'>Generate another</p>
-        <a href='' className='bg-zinc-900 px-10 py-3 rounded-full cursor-pointer'>Download</a>
+        <a href='' download className='bg-zinc-900 px-10 py-3 rounded-full cursor-pointer'>Download</a>
       </div>
     </form>
   )
