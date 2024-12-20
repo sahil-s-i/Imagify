@@ -16,7 +16,7 @@ const Result = () => {
         <button className='bg-zinc-900 px-10 sm:px-16 py-3 rounded-full' type='submit'>Generate</button>
       </div>
 
-      <div>
+      <div className='flex gap-2 flex-wrap justify-center text-white text-sm p-0.5 mt-10 rounded-full'>
         <p>Generate another</p>
         <a href=''>Download</a>
       </div>
