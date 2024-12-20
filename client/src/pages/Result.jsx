@@ -4,6 +4,7 @@ import { assets } from '../assets/assets'
 const Result = () => {
 
   const [image,setImage] = useState(assets.sample_img_1)
+  const [isImageLoaded, setIsImageLoaded] = useState(false)
 
   return (
     <form className='flex flex-col min-h-[90vh] justify-center items-center'>
