@@ -14,7 +14,7 @@ const Result = () => {
           <img src={image} alt="" className='max-w-sm rounded' />
           <span className='absolute bottom-0 left-0 h-1 bg-blue-500 w-full transition-all duration-[10s]' />
         </div>
-        <p>Loading.....</p>
+        <p className={!loading ? 'hidden' : ''}>Loading.....</p>
       </div>
       {!isImageLoaded &&
         <div className='flex w-full max-w-xl bg-neutral-500 text-white text-sm p-0.5 mt-10 rounded-full'>
