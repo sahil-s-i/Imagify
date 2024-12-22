@@ -12,6 +12,8 @@ const BuyCredit = () => {
           <div key={index}>
             <img src={assets.logo_icon} alt="logo icon" />
             <p>{item.id}</p>
+            <p>{item.desc}</p>
+            <p>{item.price} / {item.credits} credits</p>
           </div>
         ))}
       </div>
