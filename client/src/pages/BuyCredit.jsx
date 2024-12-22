@@ -10,10 +10,10 @@ const BuyCredit = () => {
       <div>
         {plans.map((item, index) => (
           <div key={index}>
-            <img src={assets.lock_icon} alt="lock icon" />
+            <img src={assets.logo_icon} alt="logo icon" />
             <p>{item.id}</p>
             <p>{item.desc}</p>
-            <p>{item.price} / {item.credits} credits</p>
+            <p>${item.price} / {item.credits} credits</p>
           </div>
         ))}
       </div>
