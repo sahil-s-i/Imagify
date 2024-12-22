@@ -1,5 +1,5 @@
 import React from 'react'
-import { plans } from '../assets/assets'
+import { assets, plans } from '../assets/assets'
 
 const BuyCredit = () => {
   return (
@@ -8,8 +8,11 @@ const BuyCredit = () => {
       <h1 className='text-center text-3xl font-medium mb-6 sm:mb-10'>Choose the plan</h1>
 
       <div>
-        {plans.map((item,index)=>(
-          
+        {plans.map((item, index) => (
+          <div key={index}>
+            <img src={assets.logo_icon} alt="logo icon" />
+            <p>{item.id}</p>
+          </div>
         ))}
       </div>
     </div>
