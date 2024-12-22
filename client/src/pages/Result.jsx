@@ -13,7 +13,7 @@ const Result = () => {
   }
 
   return (
-    <form  className='flex flex-col min-h-[90vh] justify-center items-center'>
+    <form onSubmit={onSubmitHandler} className='flex flex-col min-h-[90vh] justify-center items-center'>
       <div>
         <div className='relative'>
           <img src={image} alt="" className='max-w-sm rounded' />
