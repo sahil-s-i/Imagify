@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext'
 
 const BuyCredit = () => {
 
-  const {user} = useContext(AppContext)
+  const { user } = useContext(AppContext)
 
   return (
     <div className='min-h-[80vh] text-center pt-14 mb-10'>
@@ -21,7 +21,8 @@ const BuyCredit = () => {
             <p className='text-sm'>{item.desc}</p>
             <p className='mt-6'>
               <span className='text-3xl font-medium'>${item.price}</span> / {item.credits} credits</p>
-            <button className='w-full bg-gray-800 text-white mt-8 text-sm py-2.5 rounded-md min-w-52'>Get Started</button>
+            <button className='w-full bg-gray-800 text-white mt-8 text-sm py-2.5 rounded-md min-w-52'>
+              {user ? 'Purchase' : "Get Started"}</button>
           </div>
         ))}
       </div>
