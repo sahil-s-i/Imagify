@@ -13,7 +13,7 @@ const BuyCredit = () => {
             className='bg-white drop-shadow-sm border rounded-lg py-12 px-8 text-gray-600 hover:scale-105 transition-all duration-500'
           >
             <img width={40} src={assets.logo_icon} alt="logo icon" />
-            <p>{item.id}</p>
+            <p className='mt-3 mb-1 font-semibold'>{item.id}</p>
             <p>{item.desc}</p>
             <p>${item.price} / {item.credits} credits</p>
           </div>
