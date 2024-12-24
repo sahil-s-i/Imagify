@@ -12,6 +12,14 @@ const Login = () => {
                     <img width={30} src={assets.profile_icon} alt="User icon" />
                     <input className='outline-none text-sm' type="text" placeholder='Full Name' required />
                 </div>
+
+                <div className='border px-6 py-2 flex items-center gap-2 rounded-full mt-4'>
+                    <img width={20} src={assets.email_icon} alt="Email icon" />
+                    <input className='outline-none text-sm' type="email" placeholder='Email Id' required />
+                </div>
+
+                
+
             </form>
         </div>
     )
