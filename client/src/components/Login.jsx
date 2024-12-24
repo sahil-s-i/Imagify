@@ -30,6 +30,7 @@ const Login = () => {
                 <p className='mt-5 text-center'>Don't have an account?<span className='text-blue-600 cursor-pointer'> Sign Up</span></p>
                 <p className='mt-5 text-center'>Already have an account?<span className='text-blue-600 cursor-pointer'> Login</span></p>
 
+                <img src={assets.cross_icon} alt="Close icon" />
             </form>
         </div>
     )
