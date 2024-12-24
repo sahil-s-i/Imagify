@@ -23,6 +23,8 @@ const Login = () => {
                     <input className='outline-none text-sm' type="password" placeholder='Password' required />
                 </div>
 
+                <p>Forgot Password?</p>
+
             </form>
         </div>
     )
