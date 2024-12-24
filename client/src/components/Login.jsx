@@ -1,4 +1,5 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const Login = () => {
     return (
@@ -6,6 +7,10 @@ const Login = () => {
             <form>
                 <h1>Sign Up</h1>
                 <p>Welcome back! Please sign in to continue</p>
+
+                <div>
+                    <img src={assets.user_icon} alt="User icon" />
+                </div>
             </form>
         </div>
     )
