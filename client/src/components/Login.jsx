@@ -10,6 +10,7 @@ const Login = () => {
 
                 <div>
                     <img src={assets.user_icon} alt="User icon" />
+                    <input type="text" placeholder='Full Name' required />
                 </div>
             </form>
         </div>
