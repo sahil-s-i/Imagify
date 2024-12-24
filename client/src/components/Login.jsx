@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { assets } from '../assets/assets'
 
 const Login = () => {
+
+    const [state, setState] = useState('Login');
+
     return (
         <div className='absolute top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center'>
             <form className='relative bg-white p-10 rounded-xl text-slate-500'>
@@ -30,7 +33,7 @@ const Login = () => {
                 <p className='mt-5 text-center'>Don't have an account?<span className='text-blue-600 cursor-pointer'> Sign Up</span></p>
                 <p className='mt-5 text-center'>Already have an account?<span className='text-blue-600 cursor-pointer'> Login</span></p>
 
-                <img src={assets.cross_icon} alt="Close icon" className='absolute top-5 right-5 cursor-pointer'/>
+                <img src={assets.cross_icon} alt="Close icon" className='absolute top-5 right-5 cursor-pointer' />
             </form>
         </div>
     )
