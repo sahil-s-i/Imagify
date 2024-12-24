@@ -27,6 +27,9 @@ const Login = () => {
 
                 <button className='bg-blue-600 w-full text-white py-2 rounded-full'>Create an account</button>
 
+                <p className='mt-5 text-center'>Don't have an account?<span className='text-blue-600 cursor-pointer'> Sign Up</span></p>
+                <p className='mt-5 text-center'>Already have an account?<span className='text-blue-600 cursor-pointer'> Login</span></p>
+
             </form>
         </div>
     )
