@@ -14,6 +14,7 @@ const Login = () => {
                 {state !== 'Login' && <div className='border px-6 py-2 flex items-center gap-2 rounded-full mt-5'>
                     <img width={30} src={assets.profile_icon} alt="User icon" />
                     <input className='outline-none text-sm' type="text" placeholder='Full Name' required />
+                    
                 </div>}
 
                 <div className='border px-6 py-2 flex items-center gap-2 rounded-full mt-4'>
