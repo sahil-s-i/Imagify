@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
+import { AppContext } from '../context/AppContext';
 
 const Login = () => {
 
     const [state, setState] = useState('Login');
+    const { setShowLogin } = useContext(AppContext);
 
     useEffect(() => {
         document.body.style.overflow = 'hidden';
