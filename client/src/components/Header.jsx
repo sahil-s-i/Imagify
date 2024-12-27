@@ -24,7 +24,11 @@ const Header = () => {
         transition={{ delay: 0.4, duration: 2 }}
       >image</span>, in seconds.</motion.h1>
 
-      <p className='text-center max-w-xl mx-auto mt-5'>Unless your creativity with AI. Turn your imagination into visual art in seconds - just type, and watch the magic happen.</p>
+      <motion.p className='text-center max-w-xl mx-auto mt-5'
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+      >Unless your creativity with AI. Turn your imagination into visual art in seconds - just type, and watch the magic happen.</motion.p>
 
       <button className='sm:text-lg text-white bg-black w-auto mt-8 px-12 py-2.5 flex items-center gap-2 rounded-full'>
         Generate Images
