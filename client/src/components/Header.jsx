@@ -10,10 +10,14 @@ const Header = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <div className='text-stone-500 inline-flex text-center gap-2 bg-white px-6 py-1 rounded-full border border-neutral-500'>
+      <motion.div className='text-stone-500 inline-flex text-center gap-2 bg-white px-6 py-1 rounded-full border border-neutral-500'
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        viewport={{ delay: 0.2, duration: 0.8 }}
+      >
         <p>Best text to image generator</p>
         <img src={assets.star_icon} alt="star icon" />
-      </div>
+      </motion.div>
       <h1 className='text-4xl max-w-[300px] sm:text-7xl sm:max-w-[590px] mx-auto mt-10 text-center'>Turn text to <span className='text-blue-600'>image</span>, in seconds.</h1>
 
       <p className='text-center max-w-xl mx-auto mt-5'>Unless your creativity with AI. Turn your imagination into visual art in seconds - just type, and watch the magic happen.</p>
