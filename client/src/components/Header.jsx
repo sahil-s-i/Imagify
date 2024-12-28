@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
 import { delay, motion } from "motion/react"
+import { AppContext } from '../context/AppContext'
 
 const Header = () => {
 
-  const {user,setShowLogin} =  useContext()
+  const {user,setShowLogin} =  useContext(AppContext);
 
   const onClickHandler = () =>{
 
