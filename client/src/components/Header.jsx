@@ -13,6 +13,8 @@ const Header = () => {
   const onClickHandler = () => {
     if (user) {
       navigate('/result')
+    } else {
+      setShowLogin(true)
     }
   }
 
