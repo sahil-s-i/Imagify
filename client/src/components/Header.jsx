@@ -2,13 +2,18 @@ import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
 import { delay, motion } from "motion/react"
 import { AppContext } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
   const {user,setShowLogin} =  useContext(AppContext);
+  const navigate = useNavigate();
+
 
   const onClickHandler = () =>{
-
+    if(user){
+      navigate()
+    }
   }
 
   return (
