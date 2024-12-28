@@ -41,11 +41,15 @@ const Header = () => {
         <img className='h-6' src={assets.star_group} alt="shinging starts" />
       </motion.button>
 
-      <div className='flex flex-wrap justify-center mt-16 gap-3'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className='flex flex-wrap justify-center mt-16 gap-3'>
         {Array(6).fill('').map((item, index) => (
           <img className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10' src={index % 2 === 0 ? assets.sample_img_2 : assets.sample_img_1} alt="sample generated image" key={index} width={70} />
         ))}
-      </div>
+      </motion.div>
 
       <p className='mt-2 text-neutral-600'>Generated images from imagify</p>
 
