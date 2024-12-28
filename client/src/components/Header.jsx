@@ -3,6 +3,11 @@ import { assets } from '../assets/assets'
 import { delay, motion } from "motion/react"
 
 const Header = () => {
+
+  const onClickHandler = () =>{
+    
+  }
+
   return (
     <motion.div className='flex flex-col justify-center items-center text-center my-20'
       initial={{ opacity: 0.2, y: 100 }}
