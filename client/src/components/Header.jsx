@@ -37,7 +37,8 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 2 }}
-      >image</span>, in seconds.</motion.h1>
+      >
+        image</span>, in seconds.</motion.h1>
 
       <motion.p className='text-center max-w-xl mx-auto mt-5'
         initial={{ opacity: 0, y: 20 }}
