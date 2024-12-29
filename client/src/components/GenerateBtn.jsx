@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
 import { motion } from 'framer-motion'
+import { AppContext } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
 const GenerateBtn = () => {
+
+  const { user, setShowLogin } = useContext(AppContext)
+  const navigate = useNavigate()
+
   return (
     <motion.div
       initial={{ opacity: 0.2, y: 100 }}
