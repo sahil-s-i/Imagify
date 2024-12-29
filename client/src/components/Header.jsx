@@ -9,7 +9,6 @@ const Header = () => {
   const { user, setShowLogin } = useContext(AppContext);
   const navigate = useNavigate();
 
-
   const onClickHandler = () => {
     if (user) {
       navigate('/result')
