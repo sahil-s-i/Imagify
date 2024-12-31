@@ -9,3 +9,7 @@ app.use(express.json())
 app.use(cors)
 
 app.get('/', (req, res) => res.send("API Working"))
+
+app.listen(PORT, () =>
+    console.log('Server running on PORT', PORT)
+)
