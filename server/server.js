@@ -11,7 +11,6 @@ app.use(express.json())
 app.use(cors())
 await connectDB()
 
-
 app.get('/', (req, res) => res.send("API Working"))
 
 app.listen(PORT, () =>
