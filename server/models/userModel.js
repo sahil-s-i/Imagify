@@ -19,5 +19,5 @@ const userSchema = new mongoose.Schema({
         default: 5,
     }
 });
-    
-const userModel = mongoose.model("user", userSchema);
+
+const userModel = mongoose.models.user || mongoose.model("user", userSchema);
