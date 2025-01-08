@@ -10,6 +10,9 @@ const registerUser = async (req, res) => {
             return res.json({ sucess: false, message: "All fields are required" });
         }
 
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
     } catch (error) {
 
     }
