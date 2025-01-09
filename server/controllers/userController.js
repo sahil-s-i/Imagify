@@ -16,7 +16,8 @@ const registerUser = async (req, res) => {
         const userData = {
             name,
             email,
-            password : hashedPassword
+            password : hashedPassword,
+            
         }
 
     } catch (error) {
