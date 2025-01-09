@@ -18,7 +18,6 @@ const registerUser = async (req, res) => {
             email,
             password : hashedPassword
         }
-
     } catch (error) {
 
     }
