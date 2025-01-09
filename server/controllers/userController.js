@@ -19,6 +19,6 @@ const registerUser = async (req, res) => {
             password : hashedPassword
         }
     } catch (error) {
-
+        return res.json({ sucess: false, message: "Error in registration" });
     }
 }
