@@ -16,11 +16,14 @@ const registerUser = async (req, res) => {
         const userData = {
             name,
             email,
-            password : hashedPassword
+            password: hashedPassword
         }
 
         const newUser = new userModel(userData);
-        
+        const user = await newUser.save();
+
+        const token = jwt.sign({ id: user._id },{})
+
 
     } catch (error) {
         return res.json({ sucess: false, message: "Error in registration" });
