@@ -18,6 +18,10 @@ const registerUser = async (req, res) => {
             email,
             password : hashedPassword
         }
+
+        const newUser = new userModel(userData);
+        
+
     } catch (error) {
         return res.json({ sucess: false, message: "Error in registration" });
     }
