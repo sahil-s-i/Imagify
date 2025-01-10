@@ -27,6 +27,7 @@ const registerUser = async (req, res) => {
         res.json({ sucess: true, user: { name: user.name }, token })
 
     } catch (error) {
-        return res.json({ sucess: false, message: "Error in registration" });
+        console.log(error);
+        return res.json({ sucess: false, message: error.message});
     }
 }
