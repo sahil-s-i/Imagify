@@ -28,6 +28,10 @@ const registerUser = async (req, res) => {
 
     } catch (error) {
         console.log(error);
-        return res.json({ sucess: false, message: error.message});
+        return res.json({ sucess: false, message: error.message });
     }
+}
+
+const loginUser = async (req, res) => {
+
 }
