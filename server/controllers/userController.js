@@ -54,5 +54,3 @@ const loginUser = async (req, res) => {
         return res.json({ sucess: false, message: error.message });
     }
 }
-
-
