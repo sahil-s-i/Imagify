@@ -5,8 +5,8 @@ export const generateImage = async (req, res) => {
     try {
         const { userId, prompt } = req.body;
         const user = await userModel.findById(userId);
-        if (!user) {
-
+        if (!user || !prompt) {
+            return res.json({ success: false, message: 'Missing Details' })
         }
     } catch (error) {
         console.log(error);
