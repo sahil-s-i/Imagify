@@ -1,5 +1,5 @@
 import userModel from "../models/userModel";
-
+import FormData from "form-data";
 
 export const generateImage = async (req, res) => {
     try {
@@ -12,7 +12,10 @@ export const generateImage = async (req, res) => {
         if (user.creditBalance === 0 || userModel.creditBalance < 0) {
             return res.json({ success: false, message: 'No credit Balance', creditBalance: user.creditBalance });
         }
-        
+
+        const formData = new FormData()
+        formData.append('prompt', prompt)
+
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: error.message })
