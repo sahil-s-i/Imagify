@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
+import axios from 'axios';
 
 const Login = () => {
 
@@ -15,9 +16,11 @@ const Login = () => {
     const onSubmitHandler = async (e) => {
         e.preventDefault();
         try {
-            
+            if (state === 'Login') {
+                await axios.post()
+            }
         } catch (error) {
-            
+
         }
     }
 
