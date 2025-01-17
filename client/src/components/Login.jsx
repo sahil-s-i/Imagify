@@ -7,7 +7,7 @@ import axios from 'axios';
 const Login = () => {
 
     const [state, setState] = useState('Login');
-    const { setShowLogin, backendUrl, setToken } = useContext(AppContext);
+    const { setShowLogin, backendUrl, setToken, setUser } = useContext(AppContext);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -21,6 +21,9 @@ const Login = () => {
 
                 if (data.success) {
                     setToken(data.token);
+                    setUser(data.user)
+                    localStorage.getItem('token', data.token)
+                    setShowLogin(false);
                 }
             }
         } catch (error) {
