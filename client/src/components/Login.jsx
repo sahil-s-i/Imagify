@@ -3,6 +3,7 @@ import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Login = () => {
 
@@ -24,8 +25,8 @@ const Login = () => {
                     setUser(data.user)
                     localStorage.getItem('token', data.token)
                     setShowLogin(false);
-                }else{
-                    
+                } else {
+                    toast.error(data.message)
                 }
             }
         } catch (error) {
