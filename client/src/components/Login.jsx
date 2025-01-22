@@ -26,7 +26,7 @@ const Login = () => {
                     localStorage.getItem('token', data.token)
                     setShowLogin(false);
                 } else {
-                    toast.error(data.message)
+                    toast.error(data.message);
                 }
             } else {
                 const { data } = await axios.post(backendUrl + '/api/user/register', { name, email, password });
@@ -37,7 +37,7 @@ const Login = () => {
                     localStorage.getItem('token', data.token);
                     setShowLogin(false);
                 } else {
-                    toast.error(data.message)
+                    toast.error(data.message);
                 }
             }
         } catch (error) {
