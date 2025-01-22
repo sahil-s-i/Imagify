@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { assets } from '../assets/assets'
+import React, { useContext, useEffect, useState } from 'react';
+import { assets } from '../assets/assets';
 import { AppContext } from '../context/AppContext';
 import { motion } from 'framer-motion';
 import axios from 'axios';
@@ -41,7 +41,7 @@ const Login = () => {
                 }
             }
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.message);
         }
     }
 
