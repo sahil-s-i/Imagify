@@ -35,7 +35,11 @@ const AppContextProvider = (props) => {
                 loadCreditsData()
                 return data.resultImage
             }else{
-                toast.error(data.message)
+                toast.error(data.message);
+                loadCreditsData();
+                if(data.creditsBalance === 0){
+                    
+                }
             }
         } catch (error) {
             toast.error(error.message);
