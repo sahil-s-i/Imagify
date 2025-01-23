@@ -27,8 +27,12 @@ const AppContextProvider = (props) => {
         }
     }
 
-    const generateImage = async () => {
-        
+    const generateImage = async (prompt) => {
+        try {
+            
+        } catch (error) {
+            toast.error(error.message);
+        }
     }
 
     const logout = () => {
