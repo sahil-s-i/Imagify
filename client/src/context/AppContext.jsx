@@ -29,9 +29,9 @@ const AppContextProvider = (props) => {
 
     const generateImage = async (prompt) => {
         try {
-            
+            await axios.post(backendUrl + '/api.image/generate-image')
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.message);
         }
     }
 
