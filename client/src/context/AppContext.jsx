@@ -27,6 +27,10 @@ const AppContextProvider = (props) => {
         }
     }
 
+    const generateImage = async () => {
+        
+    }
+
     const logout = () => {
         localStorage.removeItem('token');
         setToken('');
