@@ -15,8 +15,6 @@ const Result = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     setLoading(true)
-
-    
   }
 
   return (
