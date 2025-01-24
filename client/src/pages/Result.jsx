@@ -15,6 +15,11 @@ const Result = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     setLoading(true)
+
+    if(input){
+      const image = await generateImage(input)
+      
+    }
   }
 
   return (
