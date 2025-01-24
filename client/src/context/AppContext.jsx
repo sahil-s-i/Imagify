@@ -32,7 +32,7 @@ const AppContextProvider = (props) => {
 
     const generateImage = async (prompt) => {
         try {
-            const {data} = await axios.post(backendUrl + '/api.image/generate-image', { prompt }, { headers: { token } });
+            const {data} = await axios.post(backendUrl + '/api/image/generate-image', { prompt }, { headers: { token } });
 
             if(data.success){
                 loadCreditsData()
