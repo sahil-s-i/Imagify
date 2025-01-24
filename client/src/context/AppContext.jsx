@@ -13,6 +13,8 @@ const AppContextProvider = (props) => {
 
     const backendUrl = import.meta.env.VITE_BACKEND_URL
 
+    const navigate = useNavigate();
+
     const loadCreditsData = async () => {
         try {
             const { data } = await axios.get(backendUrl + '/api/user/credits', { headers: { token } })
@@ -38,7 +40,7 @@ const AppContextProvider = (props) => {
                 toast.error(data.message);
                 loadCreditsData();
                 if(data.creditsBalance === 0){
-                    
+                    navigate('/buy')
                 }
             }
         } catch (error) {
@@ -59,7 +61,7 @@ const AppContextProvider = (props) => {
     }, [token])
 
     const value = {
-        user, setUser, showLogin, setShowLogin, backendUrl, token, setToken, credit, setCredit, loadCreditsData, logout
+        user, setUser, showLogin, setShowLogin, backendUrl, token, setToken, credit, setCredit, loadCreditsData, logout, generateImage
     }
 
     return (
