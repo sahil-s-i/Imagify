@@ -1,6 +1,7 @@
 import userModel from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
+import razorpay from 'razorpay';
 
 const registerUser = async (req, res) => {
     try {
@@ -66,5 +67,7 @@ const userCredits = async (res, req) => {
         res.json({ sucess: false, message: error.message })
     }
 }
+
+
 
 export { registerUser, loginUser, userCredits }
