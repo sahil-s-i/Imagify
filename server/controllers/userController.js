@@ -69,5 +69,10 @@ const userCredits = async (res, req) => {
 }
 
 
+const razorpayInstance = new razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_KEY_SECRET
+})
+
 
 export { registerUser, loginUser, userCredits }
