@@ -82,6 +82,18 @@ const paymentRazorpay = async (req, res) => {
         if (!userId || !planId) {
             return res.json({ success: false, message: "Missing Details" });
         }
+
+        let credits, plan, amount, date
+
+        switch (planId) {
+            case value:
+                
+                break;
+        
+            default:
+                break;
+        }
+
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: error.message });
