@@ -106,6 +106,12 @@ const paymentRazorpay = async (req, res) => {
                 return res.json({ success: false, message: "Plan Not Found" });
         }
 
+        date = Date.now();
+
+        const transactionData = {
+            userId, plan, amount, credits, date
+        }
+
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: error.message });
