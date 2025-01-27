@@ -115,6 +115,13 @@ const paymentRazorpay = async (req, res) => {
 
         const newTransaction = await transactionModel.create(transactionData);
 
+        
+
+        await razorpayInstance.orders.create(options, (error, order) => {
+
+        })
+
+
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: error.message });
