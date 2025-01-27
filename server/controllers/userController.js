@@ -116,15 +116,17 @@ const paymentRazorpay = async (req, res) => {
         const newTransaction = await transactionModel.create(transactionData);
 
         const options = {
-            amount : amount * 100, 
+            amount: amount * 100,
             currency: process.env.CURRENCY,
-            receipt : newTransaction._id
+            receipt: newTransaction._id
         }
 
         await razorpayInstance.orders.create(options, (error, order) => {
             if (error) {
                 console.log(error);
+                return res.json({ success: false, message: error.message });
             }
+            res.json({ success: true, order })
         })
 
 
