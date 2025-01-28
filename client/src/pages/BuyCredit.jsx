@@ -4,6 +4,7 @@ import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 const BuyCredit = () => {
 
@@ -13,7 +14,9 @@ const BuyCredit = () => {
 
   const paymentRazorpay = async (planId)=>{
     try {
-      
+      if (!user) {
+        setShowLogin(true);
+      }
     } catch (error) {
       toast.error(error.message);
     }
