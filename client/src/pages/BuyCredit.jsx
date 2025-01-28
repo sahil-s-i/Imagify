@@ -12,10 +12,12 @@ const BuyCredit = () => {
 
   const navigate = useNavigate();
 
-  const paymentRazorpay = async (planId)=>{
+  const paymentRazorpay = async (planId) => {
     try {
       if (!user) {
         setShowLogin(true);
+
+        await axios.post(backendUrl + '/api/user/pay-razor', { planId }, { headers: { token } })
       }
     } catch (error) {
       toast.error(error.message);
