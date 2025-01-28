@@ -2,10 +2,11 @@ import React, { useContext } from 'react'
 import { assets, plans } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const BuyCredit = () => {
 
-  const { user, backendUrl, loadCreditsData, token } = useContext(AppContext)
+  const { user, backendUrl, loadCreditsData, token, setShowLogin } = useContext(AppContext)
 
   return (
     <motion.div
