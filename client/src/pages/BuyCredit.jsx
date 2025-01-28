@@ -10,6 +10,10 @@ const BuyCredit = () => {
 
   const navigate = useNavigate();
 
+  const paymentRazorpay = async (planId)=>{
+    
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0.2, y: 100 }}
