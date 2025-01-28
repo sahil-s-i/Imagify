@@ -3,6 +3,7 @@ import { assets, plans } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const BuyCredit = () => {
 
@@ -14,7 +15,7 @@ const BuyCredit = () => {
     try {
       
     } catch (error) {
-      
+      toast.error(error.message);
     }
   }
 
