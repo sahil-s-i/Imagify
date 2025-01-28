@@ -11,7 +11,11 @@ const BuyCredit = () => {
   const navigate = useNavigate();
 
   const paymentRazorpay = async (planId)=>{
-    
+    try {
+      
+    } catch (error) {
+      
+    }
   }
 
   return (
