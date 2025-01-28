@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const BuyCredit = () => {
 
-  const { user } = useContext(AppContext)
+  const { user, backendUrl, loadCreditsData, token } = useContext(AppContext)
 
   return (
     <motion.div
