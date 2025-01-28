@@ -6,7 +6,9 @@ import { useNavigate } from 'react-router-dom'
 
 const BuyCredit = () => {
 
-  const { user, backendUrl, loadCreditsData, token, setShowLogin } = useContext(AppContext)
+  const { user, backendUrl, loadCreditsData, token, setShowLogin } = useContext(AppContext);
+
+  const navigate = useNavigate();
 
   return (
     <motion.div
