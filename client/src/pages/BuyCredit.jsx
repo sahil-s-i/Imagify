@@ -12,6 +12,10 @@ const BuyCredit = () => {
 
   const navigate = useNavigate();
 
+  const initpy = async (order) =>{
+    
+  }
+
   const paymentRazorpay = async (planId) => {
     try {
       if (!user) {
