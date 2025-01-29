@@ -13,7 +13,12 @@ const BuyCredit = () => {
   const navigate = useNavigate();
 
   const initpy = async (order) => {
-
+    const options = {
+      key : import.meta.env.VITE_RAZORPAY_KEY_ID,
+      amount : order.amount,
+      currency:  order.currency,
+      
+    }
   }
 
   const paymentRazorpay = async (planId) => {
