@@ -22,7 +22,7 @@ const BuyCredit = () => {
       order_id: order.id,
       receipt: order.receipt,
       handler: async (response) => {
-        
+        console.log(response);
       }
     }
   }
