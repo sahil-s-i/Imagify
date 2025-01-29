@@ -53,7 +53,7 @@ const BuyCredit = () => {
             <p className='text-sm'>{item.desc}</p>
             <p className='mt-6'>
               <span className='text-3xl font-medium'>${item.price}</span> / {item.credits} credits</p>
-            <button className='w-full bg-gray-800 text-white mt-8 text-sm py-2.5 rounded-md min-w-52'>
+            <button onClick={() => paymentRazorpay(item.id)} className='w-full bg-gray-800 text-white mt-8 text-sm py-2.5 rounded-md min-w-52'>
               {user ? 'Purchase' : "Get Started"}</button>
           </div>
         ))}
