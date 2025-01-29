@@ -12,8 +12,8 @@ const BuyCredit = () => {
 
   const navigate = useNavigate();
 
-  const initpy = async (order) =>{
-    
+  const initpy = async (order) => {
+
   }
 
   const paymentRazorpay = async (planId) => {
@@ -21,10 +21,10 @@ const BuyCredit = () => {
       if (!user) {
         setShowLogin(true);
 
-        const {data} = await axios.post(backendUrl + '/api/user/pay-razor', { planId }, { headers: { token } })
+        const { data } = await axios.post(backendUrl + '/api/user/pay-razor', { planId }, { headers: { token } })
 
         if (data.success) {
-          
+          initpy(data.order)
         }
 
       }
