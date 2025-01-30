@@ -25,7 +25,10 @@ const BuyCredit = () => {
         console.log(response);
       }
     }
+    const rzp = new window.Razorpay();
   }
+
+
 
   const paymentRazorpay = async (planId) => {
     try {
