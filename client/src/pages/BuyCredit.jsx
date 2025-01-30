@@ -26,6 +26,7 @@ const BuyCredit = () => {
       }
     }
     const rzp = new window.Razorpay();
+    rzp.open()
   }
 
 
