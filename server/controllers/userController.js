@@ -139,6 +139,10 @@ const paymentRazorpay = async (req, res) => {
 const verifyRazorpay = async (req, res) => {
     try {
 
+        const { razorpay_order_id } = req.body;
+
+        const orderInfo = await razorpayInstance.orders.fetch(razorpay_order_id)
+
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: error.message })
