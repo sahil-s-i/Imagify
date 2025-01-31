@@ -145,6 +145,13 @@ const verifyRazorpay = async (req, res) => {
 
         if (orderInfo.status === 'paid') {
             const transactionData = await transactionModel.findById(orderInfo.receipt)
+            if(transactionData.payment){
+                return res.json({ success: false, message: "Payment Failed" });
+            }
+
+            const userData = await userModel.findById(transactionData.userId)
+
+            const creditBalance = userData.creditBalance
         }
 
     } catch (error) {
