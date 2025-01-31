@@ -136,4 +136,8 @@ const paymentRazorpay = async (req, res) => {
     }
 }
 
+const verifyRazorpay = async (req, res) => {
+
+}
+
 export { registerUser, loginUser, userCredits, paymentRazorpay }
