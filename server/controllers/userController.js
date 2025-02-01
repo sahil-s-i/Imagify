@@ -33,6 +33,7 @@ const registerUser = async (req, res) => {
         return res.json({ sucess: false, message: error.message });
     }
 }
+
 const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
