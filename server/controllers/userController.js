@@ -148,7 +148,6 @@ const verifyRazorpay = async (req, res) => {
             }
 
             const userData = await userModel.findById(transactionData.userId)
-
             const creditBalance = userData.creditBalance + transactionData.credits;
         }
 
