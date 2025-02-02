@@ -166,4 +166,4 @@ const verifyRazorpay = async (req, res) => {
     }
 }
 
-export { registerUser, loginUser, userCredits, paymentRazorpay }
+export { registerUser, loginUser, userCredits, paymentRazorpay, verifyRazorpay }
