@@ -11,5 +11,6 @@ userRouter.post('/pay-razor', userAuth, paymentRazorpay)
 userRouter.post('/verify-razor', verifyRazorpay)
 
 export default userRouter
+
 // localhost : 4000/api/user/register
 // localhost : 4000/api/user/login
