@@ -22,7 +22,11 @@ const BuyCredit = () => {
       order_id: order.id,
       receipt: order.receipt,
       handler: async (response) => {
-        console.log(response);
+        try {
+          
+        } catch (error) {
+          toast.error(error.message);
+        }
       }
     }
     const rzp = new window.Razorpay();
