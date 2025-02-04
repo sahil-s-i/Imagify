@@ -24,6 +24,11 @@ const BuyCredit = () => {
       handler: async (response) => {
         try {
           const { data } = await axios.post(backendUrl + '/api/user/verify-razor', response, { headers: { token } });
+          if (data.success) {
+            loadCreditsData();
+            navigate('/');
+            toast.success('');
+          }
         } catch (error) {
           toast.error(error.message);
         }
