@@ -23,7 +23,7 @@ const BuyCredit = () => {
       receipt: order.receipt,
       handler: async (response) => {
         try {
-          
+          const { data } = await axios.post(backendUrl + '/api/user/verify-razor', response, { headers: { token } });
         } catch (error) {
           toast.error(error.message);
         }
