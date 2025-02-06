@@ -38,8 +38,6 @@ const BuyCredit = () => {
     rzp.open()
   }
 
-
-
   const paymentRazorpay = async (planId) => {
     try {
       if (!user) {
