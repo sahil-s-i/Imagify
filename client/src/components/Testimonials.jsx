@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 const Testimonials = () => {
     return (
-        
         <motion.div
             initial={{ opacity: 0.2, y: 100 }}
             transition={{ duration: 1 }}
